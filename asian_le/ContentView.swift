@@ -35,28 +35,32 @@ struct ContentView: View {
                 }
                 
                 .background(Color(hex: "FFAD60"))
-                .shadow(color: .gray.opacity(0.5), radius: 5, x: 0, y: 2)
                 
                 TabView {
                     
-                    HomeView()
-                        .tabItem {
-                            Label("Home", systemImage: "house.fill")
-                        }
+//                    HomeView()
+//                        .tabItem {
+//                            Label("Home", systemImage: "house.fill")
+//                        }
+//                    
+//                    MenuView()
+//                        .tabItem {
+//                            Label("Menu", systemImage: "list.bullet")
+//                        }
+//                    
+//                    AboutUsView()
+//                        .tabItem {
+//                            Label("About Us", systemImage: "person.circle.fill")
+//                        }
+//                    
+//                    GalleryView()
+//                        .tabItem {
+//                            Label("Gallery", systemImage: "photo.on.rectangle")
+//                        }
                     
-                    MenuView()
+                    OrderView()
                         .tabItem {
-                            Label("Menu", systemImage: "list.bullet")
-                        }
-                    
-                    AboutUsView()
-                        .tabItem {
-                            Label("About Us", systemImage: "person.circle.fill")
-                        }
-                    
-                    GalleryView()
-                        .tabItem {
-                            Label("Gallery", systemImage: "photo.on.rectangle")
+                            Label("Order", systemImage: "cart")
                         }
 
                 }

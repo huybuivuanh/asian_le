@@ -10,9 +10,9 @@ import SwiftUI
 
 struct OnRiceSection: View {
     @Binding var isExpanded: Bool
-    
+    let data: MenuData
+
     var body: some View {
-        let data = MenuData()
 
         // On Rice
         DisclosureGroup(isExpanded: $isExpanded) {
@@ -30,7 +30,7 @@ struct OnRiceSection: View {
                             Text(on_rice.name)
                                 .font(.system(size: 15))
                             Spacer()
-                            Text(on_rice.price)
+                            Text("$\(on_rice.price, specifier: "%0.2f")")
                                 .foregroundColor(.red)
                                 .fontWeight(.bold)
                         }
@@ -47,7 +47,7 @@ struct OnRiceSection: View {
                             Text(on_rice.name)
                                 .font(.system(size: 15))
                             Spacer()
-                            Text(on_rice.price)
+                            Text("$\(on_rice.price, specifier: "%0.2f")")
                                 .foregroundColor(.red)
                                 .fontWeight(.bold)
                         }
@@ -64,7 +64,7 @@ struct OnRiceSection: View {
                             Text(on_rice.name)
                                 .font(.system(size: 15))
                             Spacer()
-                            Text(on_rice.price)
+                            Text("$\(on_rice.price, specifier: "%0.2f")")
                                 .foregroundColor(.red)
                                 .fontWeight(.bold)
                         }
@@ -81,7 +81,7 @@ struct OnRiceSection: View {
                             Text(on_rice.name)
                                 .font(.system(size: 15))
                             Spacer()
-                            Text(on_rice.price)
+                            Text("$\(on_rice.price, specifier: "%0.2f")")
                                 .foregroundColor(.red)
                                 .fontWeight(.bold)
                         }
@@ -97,7 +97,7 @@ struct OnRiceSection: View {
                         Text(on_rice.name)
                             .font(.system(size: 15))
                         Spacer()
-                        Text(on_rice.price)
+                        Text("$\(on_rice.price, specifier: "%0.2f")")
                             .foregroundColor(.red)
                             .fontWeight(.bold)
                     }

@@ -10,9 +10,9 @@ import SwiftUI
 
 struct ChickenSection: View {
     @Binding var isExpanded: Bool
-    
+    let data: MenuData
+
     var body: some View {
-        let data = MenuData()
 
         // Chicken Dishes
         DisclosureGroup(isExpanded: $isExpanded) {
@@ -20,7 +20,7 @@ struct ChickenSection: View {
                 HStack {
                     Text(c.name)
                     Spacer()
-                    Text(c.price)
+                    Text("$\(c.price, specifier: "%0.2f")")
                         .foregroundColor(.red)
                         .fontWeight(.bold)
                 }

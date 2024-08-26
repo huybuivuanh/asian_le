@@ -10,9 +10,9 @@ import SwiftUI
 
 struct ChowMeinSection: View {
     @Binding var isExpanded: Bool
-    
+    let data: MenuData
+
     var body: some View {
-        let data = MenuData()
 
         // Chow Mein
         DisclosureGroup(isExpanded: $isExpanded) {
@@ -27,7 +27,7 @@ struct ChowMeinSection: View {
                 HStack {
                     Text(chow_mein.name)
                     Spacer()
-                    Text(chow_mein.price)
+                    Text("$\(chow_mein.price, specifier: "%0.2f")")
                         .foregroundColor(.red)
                         .fontWeight(.bold)
                 }

@@ -41,8 +41,3 @@ struct HomeView: View {
             .ignoresSafeArea()
     }
 }
-
-
-#Preview {
-    ContentView()
-}

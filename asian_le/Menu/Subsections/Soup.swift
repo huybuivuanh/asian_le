@@ -10,10 +10,9 @@ import SwiftUI
 
 struct SoupSection: View {
     @Binding var isExpanded: Bool
-    
-    var body: some View {
-        let data = MenuData()
+    let data: MenuData
 
+    var body: some View {
         
         // Soup list
         DisclosureGroup(isExpanded: $isExpanded) {
@@ -29,7 +28,7 @@ struct SoupSection: View {
                                 Text("Small ")
                                     .font(.system(size: 15))
                                     .foregroundColor(.green)
-                                Text(soup.small)
+                                Text("$\(soup.small, specifier: "%0.2f")")
                                     .font(.system(size: 15))
                                     .foregroundColor(.red)
                                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
@@ -39,7 +38,7 @@ struct SoupSection: View {
                                 Text("Med ")
                                     .font(.system(size: 15))
                                     .foregroundColor(.green)
-                                Text(soup.medium)
+                                Text("$\(soup.medium, specifier: "%0.2f")")
                                     .font(.system(size: 15))
                                     .foregroundColor(.red)
                                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
@@ -49,7 +48,7 @@ struct SoupSection: View {
                                 Text("Large ")
                                     .font(.system(size: 15))
                                     .foregroundColor(.green)
-                                Text(soup.large)
+                                Text("$\(soup.large, specifier: "%0.2f")")
                                     .font(.system(size: 15))
                                     .foregroundColor(.red)
                                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
@@ -67,7 +66,7 @@ struct SoupSection: View {
                                 Text("Med ")
                                     .font(.system(size: 15))
                                     .foregroundColor(.green)
-                                Text(soup.medium)
+                                Text("$\(soup.medium, specifier: "%0.2f")")
                                     .font(.system(size: 15))
                                     .foregroundColor(.red)
                                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
@@ -77,7 +76,7 @@ struct SoupSection: View {
                                 Text("Large ")
                                     .font(.system(size: 15))
                                     .foregroundColor(.green)
-                                Text(soup.large)
+                                Text("$\(soup.large, specifier: "%0.2f")")
                                     .font(.system(size: 15))
                                     .foregroundColor(.red)
                                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)

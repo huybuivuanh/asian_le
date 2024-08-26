@@ -10,96 +10,65 @@ import SwiftUI
 
 struct HotPlateSection: View {
     @Binding var isExpanded: Bool
-    
-    var body: some View {
-        let data = MenuData()
+    let data: MenuData
 
-        // Hot Plate
+    var body: some View {
+
         DisclosureGroup(isExpanded: $isExpanded) {
-            HStack {
-                Spacer()
-                Text("All hot plates come with mixed vegetables")
-                    .font(.system(size: 14))
-                    .foregroundColor(.red)
-                Spacer()
-            }
+            headerView()
+
             ForEach(data.hotPlate, id: \.name) { hot in
-                if hot.name == "Hot Plate 1: Sate Sauce" || hot.name == "Hot Plate 2: Black Bean Sauce" || hot.name == "Hot Plate 6: Thai Tom Yum Sauce" {
-                    VStack {
-                        HStack {
-                            Text(hot.name)
-                                .font(.system(size: 15))
-                            Spacer()
-                            Text(hot.price)
-                                .foregroundColor(.red)
-                                .fontWeight(.bold)
-                        }
-                        HStack {
-                            Text("Chicken & Beef & Pork & Shrimp")
-                                .font(.system(size: 15))
-                                .foregroundColor(.red)
-                            Spacer()
-                        }
-                    }
-                } else if hot.name == "Hot Plate 3: Ginger Sauce" {
-                    VStack {
-                        HStack {
-                            Text(hot.name)
-                                .font(.system(size: 15))
-                            Spacer()
-                            Text(hot.price)
-                                .foregroundColor(.red)
-                                .fontWeight(.bold)
-                        }
-                        HStack {
-                            Text("Ginger Beef OR Ginger Chicken")
-                                .font(.system(size: 15))
-                                .foregroundColor(.red)
-                            Spacer()
-                        }
-                    }
-                } else if hot.name == "Hot Plate 4: Coconut Sauce" {
-                    VStack {
-                        HStack {
-                            Text(hot.name)
-                                .font(.system(size: 15))
-                            Spacer()
-                            Text(hot.price)
-                                .foregroundColor(.red)
-                                .fontWeight(.bold)
-                        }
-                        HStack {
-                            Text("Coconut Pork OR Coconut Chicken")
-                                .font(.system(size: 15))
-                                .foregroundColor(.red)
-                            Spacer()
-                        }
-                    }
-                } else {
-                    VStack {
-                        HStack {
-                            Text(hot.name)
-                                .font(.system(size: 15))
-                            Spacer()
-                            Text(hot.price)
-                                .foregroundColor(.red)
-                                .fontWeight(.bold)
-                        }
-                        HStack {
-                            Text("Crispy Chicken & Beef & Pork")
-                                .font(.system(size: 15))
-                                .foregroundColor(.red)
-                            Spacer()
-                        }
-                    }
+                VStack {
+                    itemView(for: hot)
                 }
             }
             ImageSlides(images: data.hotPlateImages)
-
         } label: {
             Text("Hot Plate")
                 .foregroundColor(.orange)
                 .fontWeight(.semibold)
+        }
+    }
+
+    private func headerView() -> some View {
+        HStack {
+            Spacer()
+            Text("All hot plates come with mixed vegetables")
+                .font(.system(size: 14))
+                .foregroundColor(.red)
+            Spacer()
+        }
+    }
+
+    private func itemView(for hot: MenuItem) -> some View {
+        VStack {
+            HStack {
+                Text(hot.name)
+                    .font(.system(size: 15))
+                Spacer()
+                Text("$\(hot.price, specifier: "%0.2f")")
+                    .foregroundColor(.red)
+                    .fontWeight(.bold)
+            }
+            HStack {
+                Text(subtitle(for: hot))
+                    .font(.system(size: 15))
+                    .foregroundColor(.red)
+                Spacer()
+            }
+        }
+    }
+
+    private func subtitle(for hot: MenuItem) -> String {
+        switch hot.name {
+        case "Hot Plate 1: Sate Sauce", "Hot Plate 2: Black Bean Sauce", "Hot Plate 6: Thai Tom Yum Sauce":
+            return "Chicken & Beef & Pork & Shrimp"
+        case "Hot Plate 3: Ginger Sauce":
+            return "Ginger Beef OR Ginger Chicken"
+        case "Hot Plate 4: Coconut Sauce":
+            return "Coconut Pork OR Coconut Chicken"
+        default:
+            return "Crispy Chicken & Beef & Pork"
         }
     }
 }

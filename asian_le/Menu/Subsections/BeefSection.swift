@@ -10,9 +10,9 @@ import SwiftUI
 
 struct BeefSection: View {
     @Binding var isExpanded: Bool
-    
+    let data: MenuData
+
     var body: some View {
-        let data = MenuData()
 
         // Beef Dishes
         DisclosureGroup(isExpanded: $isExpanded) {
@@ -20,7 +20,7 @@ struct BeefSection: View {
                 HStack {
                     Text(b.name)
                     Spacer()
-                    Text(b.price)
+                    Text("$\(b.price, specifier: "%0.2f")")
                         .foregroundColor(.red)
                         .fontWeight(.bold)
                 }

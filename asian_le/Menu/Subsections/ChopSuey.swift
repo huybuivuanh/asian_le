@@ -10,9 +10,9 @@ import SwiftUI
 
 struct ChopSueySection: View {
     @Binding var isExpanded: Bool
-    
+    let data: MenuData
+
     var body: some View {
-        let data = MenuData()
 
         // Chop Suey
         DisclosureGroup(isExpanded: $isExpanded) {
@@ -27,7 +27,7 @@ struct ChopSueySection: View {
                 HStack {
                     Text(chop_suey.name)
                     Spacer()
-                    Text(chop_suey.price)
+                    Text("$\(chop_suey.price, specifier: "%0.2f")")
                         .foregroundColor(.red)
                         .fontWeight(.bold)
                 }

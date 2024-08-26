@@ -10,9 +10,9 @@ import SwiftUI
 
 struct VermicelliComboSection: View {
     @Binding var isExpanded: Bool
-    
+    let data: MenuData
+
     var body: some View {
-        let data = MenuData()
 
         // Vermicelli Combo list
         DisclosureGroup(isExpanded: $isExpanded) {
@@ -29,7 +29,7 @@ struct VermicelliComboSection: View {
                     HStack {
                         Text(verCombo.name)
                         Spacer()
-                        Text(verCombo.price)
+                        Text("#\(verCombo.price, specifier: "%0.2f")")
                             .foregroundColor(.red)
                             .fontWeight(.bold)
                     }

@@ -103,221 +103,221 @@ struct MenuData {
         }
         
         self.appetizers = [
-            MenuItem(name: "Vietnamese Spring Rolls(4)", price: "$9.00"),
-            MenuItem(name: "Chinese Egg Rolls(4)", price: "$9.00"),
-            MenuItem(name: "Half Order(2)", price: "$4.50"),
-            MenuItem(name: "Boneless Dry Ribs(25)", price: "$11.95"),
-            MenuItem(name: "Deep Fried Shrimps(16)", price: "$13.95"),
-            MenuItem(name: "Chicken Balls (16)", price: "$13.95"),
-            MenuItem(name: "Half Order(8)", price: "$7.95")
+            MenuItem(name: "Vietnamese Spring Rolls(4)", price: 9.00),
+            MenuItem(name: "Chinese Egg Rolls(4)", price: 9.00),
+            MenuItem(name: "Half Order(2)", price: 4.50),
+            MenuItem(name: "Boneless Dry Ribs(25)", price: 11.95),
+            MenuItem(name: "Deep Fried Shrimps(16)", price: 13.95),
+            MenuItem(name: "Chicken Balls (16)", price: 13.95),
+            MenuItem(name: "Half Order(8)", price: 7.95)
         ]
         self.appetizerImages = ["Springrolls", "Eggrolls", "Chicken Balls", "Shrimps", "Ribs"]
         
         self.saladRolls = [
-            MenuItem(name: "Vegetarian Salad Rolls(4)", price: "$8.50"),
-            MenuItem(name: "Full Order(4)", price: "$9.00"),
-            MenuItem(name: "Half Order(2)", price: "$5.95")
+            MenuItem(name: "Vegetarian Salad Rolls(4)", price: 8.50),
+            MenuItem(name: "Full Order(4)", price: 9.00),
+            MenuItem(name: "Half Order(2)", price: 5.95)
         ]
         self.saladRollImages = ["rolls"]
         
         self.soups = [
-            Soup(name: "Wonton Soup", small: "$5.95", medium: "$8.95", large: "$11.95"),
-            Soup(name: "Deluxe Wonton Soup", small: "$6.95", medium: "$9.95", large: "$13.95"),
-            Soup(name: "Thai Tom Yum Chicken Soup", small: "", medium: "$10.95", large: "$12.95"),
-            Soup(name: "Thai Tom Yum Shrimp Soup", small: "", medium: "$11.95", large: "$13.95")
+            Soup(name: "Wonton Soup", small: 5.95, medium: 8.95, large: 11.95),
+            Soup(name: "Deluxe Wonton Soup", small: 6.95, medium: 9.95, large: 13.95),
+            Soup(name: "Thai Tom Yum Chicken Soup", small: 0.00, medium: 10.95, large: 12.95),
+            Soup(name: "Thai Tom Yum Shrimp Soup", small: 0.00, medium: 11.95, large: 13.95)
         ]
         self.soupImages = ["Deluxe Wonton Soup", "Thai Shrimp Soup"]
         
         self.vermicelli = [
-            MenuItem(name: "Vegetarian Vermicelli", price: "$10.00"),
-            MenuItem(name: "Spring Roll Vermicelli\n(With 2 Spring Rolls)", price: "$10.00"),
-            MenuItem(name: "Sate Vermicelli & 1 Spring Roll", price: "$12.95"),
-            MenuItem(name: "Stir Fry Vermicelli & 1 Spring Roll", price: "$12.95"),
-            MenuItem(name: "Curried Vermicelli & 1 Spring Roll", price: "$12.95")
+            MenuItem(name: "Vegetarian Vermicelli", price: 10.00),
+            MenuItem(name: "Spring Roll Vermicelli\n(With 2 Spring Rolls)", price: 10.00),
+            MenuItem(name: "Sate Vermicelli & 1 Spring Roll", price: 12.95),
+            MenuItem(name: "Stir Fry Vermicelli & 1 Spring Roll", price: 12.95),
+            MenuItem(name: "Curried Vermicelli & 1 Spring Roll", price: 12.95)
         ]
         self.vermicelliImages = ["#1"]
         
         self.vermicelliCombo = [
-            MenuItem(name: "Combo A: Sate", price: "$13.95"),
-            MenuItem(name: "Combo B: Stir Fry", price: "$13.95"),
-            MenuItem(name: "Combo C: Curry", price: "$13.95")
+            MenuItem(name: "Combo A: Sate", price: 13.95),
+            MenuItem(name: "Combo B: Stir Fry", price: 13.95),
+            MenuItem(name: "Combo C: Curry", price: 13.95)
         ]
         self.vermicelliComboImages = ["RNA"]
         
         self.noodleSoups = [
-            MenuItem(name: "Wonton Noodle Soup", price: "$11.95"),
-            MenuItem(name: "Regular Noodle Soup", price: "$12.95"),
-            MenuItem(name: "Sate Noodle Soup", price: "$13.95"),
-            MenuItem(name: "Thai Tom Yum Noodle Soup", price: "$13.95"),
-            MenuItem(name: "Curry Noodle Soup", price: "$13.95")
+            MenuItem(name: "Wonton Noodle Soup", price: 11.95),
+            MenuItem(name: "Regular Noodle Soup", price: 12.95),
+            MenuItem(name: "Sate Noodle Soup", price: 13.95),
+            MenuItem(name: "Thai Tom Yum Noodle Soup", price: 13.95),
+            MenuItem(name: "Curry Noodle Soup", price: 13.95)
         ]
         self.noodleSoupImages = ["Chicken Noodle Soup", "Sate Shrimp Noodle Soup"]
         
         self.onRice = [
-            MenuItem(name: "Sate on Rice/Noodles", price: "$12.95"),
-            MenuItem(name: "Black Bean on Rice/Noodles", price: "$12.95"),
-            MenuItem(name: "Sweet & Sour on Rice/Noodles", price: "$12.95"),
-            MenuItem(name: "Coconut on Rice/Noodles", price: "$12.95"),
-            MenuItem(name: "Ginger on Rice/Noodles", price: "$12.95"),
-            MenuItem(name: "Szechuan on Rice/Noodles", price: "$12.95"),
-            MenuItem(name: "Almond on Rice/Noodles", price: "$12.95"),
-            MenuItem(name: "Lemon Chicken on Rice/Noodles", price: "$12.95")
+            MenuItem(name: "Sate on Rice/Noodles", price: 12.95),
+            MenuItem(name: "Black Bean on Rice/Noodles", price: 12.95),
+            MenuItem(name: "Sweet & Sour on Rice/Noodles", price: 12.95),
+            MenuItem(name: "Coconut on Rice/Noodles", price: 12.95),
+            MenuItem(name: "Ginger on Rice/Noodles", price: 12.95),
+            MenuItem(name: "Szechuan on Rice/Noodles", price: 12.95),
+            MenuItem(name: "Almond on Rice/Noodles", price: 12.95),
+            MenuItem(name: "Lemon Chicken on Rice/Noodles", price: 12.95)
         ]
         self.onRiceImages = ["Ginger on rice", "Al Shr on rice"]
         
         self.friedRice = [
-            MenuItem(name: "Mushroom Fried Rice", price: "$12.95"),
-            MenuItem(name: "Chicken Fried Rice", price: "$12.95"),
-            MenuItem(name: "Beef Fried Rice", price: "$12.95"),
-            MenuItem(name: "Pork Fried Rice", price: "$12.95"),
-            MenuItem(name: "Shrimp Fried Rice", price: "$13.95"),
-            MenuItem(name: "Special Fried Rice(All Meats)", price: "$13.95"),
-            MenuItem(name: "Thai Fried Rice(All Meats)", price: "$14.95")
+            MenuItem(name: "Mushroom Fried Rice", price: 12.95),
+            MenuItem(name: "Chicken Fried Rice", price: 12.95),
+            MenuItem(name: "Beef Fried Rice", price: 12.95),
+            MenuItem(name: "Pork Fried Rice", price: 12.95),
+            MenuItem(name: "Shrimp Fried Rice", price: 13.95),
+            MenuItem(name: "Special Fried Rice(All Meats)", price: 13.95),
+            MenuItem(name: "Thai Fried Rice(All Meats)", price: 14.95)
         ]
         self.friedRiceImages = ["Chicken Fried Rice"]
         
         self.chowMein = [
-            MenuItem(name: "Mushroom Chow Mein", price: "$12.95"),
-            MenuItem(name: "Chicken Chow Mein", price: "$12.95"),
-            MenuItem(name: "Beef Chow Mein", price: "$12.95"),
-            MenuItem(name: "Pork Chow Mein", price: "$12.95"),
-            MenuItem(name: "Shrimp Chow Mein", price: "$13.95"),
-            MenuItem(name: "Special Chow Mein(All Meats)", price: "$13.95"),
-            MenuItem(name: "Thai Chow Mein(All Meats)", price: "$14.95")
+            MenuItem(name: "Mushroom Chow Mein", price: 12.95),
+            MenuItem(name: "Chicken Chow Mein", price: 12.95),
+            MenuItem(name: "Beef Chow Mein", price: 12.95),
+            MenuItem(name: "Pork Chow Mein", price: 12.95),
+            MenuItem(name: "Shrimp Chow Mein", price: 13.95),
+            MenuItem(name: "Special Chow Mein(All Meats)", price: 13.95),
+            MenuItem(name: "Thai Chow Mein(All Meats)", price: 14.95)
         ]
         self.chowMeinImages = ["Chicken Chow Mein"]
         
         self.chopSuey = [
-            MenuItem(name: "Mushroom Chop Suey", price: "$12.95"),
-            MenuItem(name: "Chicken Chop Suey", price: "$12.95"),
-            MenuItem(name: "Beef Chop Suey", price: "$12.95"),
-            MenuItem(name: "Pork Chop Suey", price: "$12.95"),
-            MenuItem(name: "Shrimp Chop Suey", price: "$13.95"),
-            MenuItem(name: "Special Chop Suey(All Meats)", price: "$13.95"),
-            MenuItem(name: "Thai Chop Suey(All Meats)", price: "$14.95")
+            MenuItem(name: "Mushroom Chop Suey", price: 12.95),
+            MenuItem(name: "Chicken Chop Suey", price: 12.95),
+            MenuItem(name: "Beef Chop Suey", price: 12.95),
+            MenuItem(name: "Pork Chop Suey", price: 12.95),
+            MenuItem(name: "Shrimp Chop Suey", price: 13.95),
+            MenuItem(name: "Special Chop Suey(All Meats)", price: 13.95),
+            MenuItem(name: "Thai Chop Suey(All Meats)", price: 14.95)
         ]
         self.chopSueyImages = ["SP CS"]
         
         self.chickenDishes = [
-            MenuItem(name: "Almond Chicken & Diced Vegetables", price: "$13.95"),
-            MenuItem(name: "Sate Chicken & Vegetables", price: "$13.95"),
-            MenuItem(name: "Chicken In Black Bean Sauce", price: "$13.95"),
-            MenuItem(name: "Thai Chicken & Vegetables", price: "$13.95"),
-            MenuItem(name: "Crispy Lemon Chicken", price: "$13.95"),
-            MenuItem(name: "Crispy Coconut Chicken", price: "$13.95"),
-            MenuItem(name: "Crispy Ginger Chicken", price: "$13.95"),
-            MenuItem(name: "Sweet & Sour Chicken", price: "$13.95"),
-            MenuItem(name: "Szechuan Crispy Chicken", price: "$13.95"),
-            MenuItem(name: "Butter Garlic Chicken", price: "$13.95")
+            MenuItem(name: "Almond Chicken & Diced Vegetables", price: 13.95),
+            MenuItem(name: "Sate Chicken & Vegetables", price: 13.95),
+            MenuItem(name: "Chicken In Black Bean Sauce", price: 13.95),
+            MenuItem(name: "Thai Chicken & Vegetables", price: 13.95),
+            MenuItem(name: "Crispy Lemon Chicken", price: 13.95),
+            MenuItem(name: "Crispy Coconut Chicken", price: 13.95),
+            MenuItem(name: "Crispy Ginger Chicken", price: 13.95),
+            MenuItem(name: "Sweet & Sour Chicken", price: 13.95),
+            MenuItem(name: "Szechuan Crispy Chicken", price: 13.95),
+            MenuItem(name: "Butter Garlic Chicken", price: 13.95)
         ]
         self.chickenDishesImages = ["LM CK"]
         
         self.beefDishes = [
-            MenuItem(name: "Sate Beef & Vegetables", price: "$13.95"),
-            MenuItem(name: "Beef in Black Bean Sauce", price: "$13.95"),
-            MenuItem(name: "Beef and Broccoli", price: "$13.95"),
-            MenuItem(name: "Thai Beef & Vegetables", price: "$13.95"),
-            MenuItem(name: "Crispy Ginger Beef", price: "$13.95"),
-            MenuItem(name: "Szechuan Crispy Beef", price: "$13.95")
+            MenuItem(name: "Sate Beef & Vegetables", price: 13.95),
+            MenuItem(name: "Beef in Black Bean Sauce", price: 13.95),
+            MenuItem(name: "Beef and Broccoli", price: 13.95),
+            MenuItem(name: "Thai Beef & Vegetables", price: 13.95),
+            MenuItem(name: "Crispy Ginger Beef", price: 13.95),
+            MenuItem(name: "Szechuan Crispy Beef", price: 13.95)
         ]
         self.beefDishesImages = ["Beef & Broc"]
         
         self.porkDishes = [
-            MenuItem(name: "Sate Pork & Vegetables", price: "$13.95"),
-            MenuItem(name: "Pork in Black Bean Sauce", price: "$13.95"),
-            MenuItem(name: "Thai Pork & Vegetables", price: "$13.95"),
-            MenuItem(name: "Honey Ribs", price: "$13.95"),
-            MenuItem(name: "Crispy Coconut Pork", price: "$13.95"),
-            MenuItem(name: "Crispy Ginger Pork", price: "$13.95"),
-            MenuItem(name: "Sweet & Sour Lean Pork", price: "$13.95"),
-            MenuItem(name: "Szechuan Crispy Pork", price: "$13.95"),
-            MenuItem(name: "Butter Garlic Pork", price: "$13.95")
+            MenuItem(name: "Sate Pork & Vegetables", price: 13.95),
+            MenuItem(name: "Pork in Black Bean Sauce", price: 13.95),
+            MenuItem(name: "Thai Pork & Vegetables", price: 13.95),
+            MenuItem(name: "Honey Ribs", price: 13.95),
+            MenuItem(name: "Crispy Coconut Pork", price: 13.95),
+            MenuItem(name: "Crispy Ginger Pork", price: 13.95),
+            MenuItem(name: "Sweet & Sour Lean Pork", price: 13.95),
+            MenuItem(name: "Szechuan Crispy Pork", price: 13.95),
+            MenuItem(name: "Butter Garlic Pork", price: 13.95)
         ]
         self.porkDishesImages = ["Coco Pork"]
         
         self.shrimpDishes = [
-            MenuItem(name: "Sate Shrimp & Vegetables", price: "$14.95"),
-            MenuItem(name: "Shrimp in Black Bean Sauce", price: "$14.95"),
-            MenuItem(name: "Almond Shrimp & Diced vegetables", price: "$14.95"),
-            MenuItem(name: "Thai Shrimp & Vegetables", price: "$14.95"),
-            MenuItem(name: "Butter Garlic Fried Shrimp", price: "$17.95")
+            MenuItem(name: "Sate Shrimp & Vegetables", price: 14.95),
+            MenuItem(name: "Shrimp in Black Bean Sauce", price: 14.95),
+            MenuItem(name: "Almond Shrimp & Diced vegetables", price: 14.95),
+            MenuItem(name: "Thai Shrimp & Vegetables", price: 14.95),
+            MenuItem(name: "Butter Garlic Fried Shrimp", price: 17.95)
         ]
         self.shrimpDishesImages = ["Butter Fried Shrimp"]
         
         self.birdNest = [
-            MenuItem(name: "Singapore Noodles\n(With Peanut)", price: "$16.95"),
-            MenuItem(name: "Vegetable Bird Nest", price: "$16.95"),
-            MenuItem(name: "Almond Chicken &\nDiced Vegetables Bird Nest", price: "$17.95"),
-            MenuItem(name: "Almond Shrimp &\nDiced Vegetables Bird Nest", price: "$17.95"),
-            MenuItem(name: "Regular Bird Nest", price: "$17.95"),
-            MenuItem(name: "Special Bird Nest(All Meats)", price: "$18.95")
+            MenuItem(name: "Singapore Noodles\n(With Peanut)", price: 16.95),
+            MenuItem(name: "Vegetable Bird Nest", price: 16.95),
+            MenuItem(name: "Almond Chicken &\nDiced Vegetables Bird Nest", price: 17.95),
+            MenuItem(name: "Almond Shrimp &\nDiced Vegetables Bird Nest", price: 17.95),
+            MenuItem(name: "Regular Bird Nest", price: 17.95),
+            MenuItem(name: "Special Bird Nest(All Meats)", price: 18.95)
         ]
         self.birdNestImages = ["Sing ND", "SP Bnest"]
         
         self.hotPlate = [
-            MenuItem(name: "Hot Plate 1: Sate Sauce", price: "$17.95"),
-            MenuItem(name: "Hot Plate 2: Black Bean Sauce", price: "$17.95"),
-            MenuItem(name: "Hot Plate 3: Ginger Sauce", price: "$17.95"),
-            MenuItem(name: "Hot Plate 4: Coconut Sauce", price: "$17.95"),
-            MenuItem(name: "Hot Plate 5: Szechuan Sauce", price: "$17.95"),
-            MenuItem(name: "Hot Plate 6: Thai Tom Yum Sauce", price: "$17.95")
+            MenuItem(name: "Hot Plate 1: Sate Sauce", price: 17.95),
+            MenuItem(name: "Hot Plate 2: Black Bean Sauce", price: 17.95),
+            MenuItem(name: "Hot Plate 3: Ginger Sauce", price: 17.95),
+            MenuItem(name: "Hot Plate 4: Coconut Sauce", price: 17.95),
+            MenuItem(name: "Hot Plate 5: Szechuan Sauce", price: 17.95),
+            MenuItem(name: "Hot Plate 6: Thai Tom Yum Sauce", price: 17.95)
         ]
         self.hotPlateImages = ["HP5"]
         
         self.sideOrder = [
-            Soup(name: "Steamed Rice", small: "#3.00", medium: "", large: "$5.00"),
-            Soup(name: "Steamed Noodles", small: "3.00", medium: "", large: "$5.00"),
-            Soup(name: "Fries", small: "$4.00", medium: "", large: "$6.00"),
-            Soup(name: "Fries & Chicken", small: "", medium: "", large: "$9.00"),
-            Soup(name: "Mixed Vegetables", small: "", medium: "", large: "$6.00")
+            Soup(name: "Steamed Rice", small: 3.00, medium: 0.00, large: 5.00),
+            Soup(name: "Steamed Noodles", small: 3.00, medium: 0.00, large: 5.00),
+            Soup(name: "Fries", small: 4.00, medium: 0.00, large: 6.00),
+            Soup(name: "Fries & Chicken", small: 0.00, medium: 0.00, large: 9.00),
+            Soup(name: "Mixed Vegetables", small: 0.00, medium: 0.00, large: 6.00)
         ]
         self.sideOrderImages = ["FRIES & Chicken"]
         
         self.sauce = [
-            Soup(name: "Fish Sauce", small: "$0.50", medium: "", large: "$1.00"),
-            Soup(name: "Hoisin Sauce", small: "$0.50", medium: "", large: "$1.00"),
-            Soup(name: "Sriracha Hot Sauce", small: "$0.50", medium: "", large: "$1.00"),
-            Soup(name: "Sweet Chili Sauce", small: "$0.50", medium: "", large: "$1.00"),
-            Soup(name: "Sweet & Sour Sauce", small: "$0.50", medium: "", large: "$1.00"),
-            Soup(name: "Hot Chili Oil", small: "$0.50", medium: "", large: "$1.00"),
-            Soup(name: "Peanut Sauce", small: "", medium: "", large: "$1.50")
+            Soup(name: "Fish Sauce", small: 0.50, medium: 0.00, large: 1.00),
+            Soup(name: "Hoisin Sauce", small: 0.50, medium: 0.00, large: 1.00),
+            Soup(name: "Sriracha Hot Sauce", small: 0.50, medium: 0.00, large: 1.00),
+            Soup(name: "Sweet Chili Sauce", small: 0.50, medium: 0.00, large: 1.00),
+            Soup(name: "Sweet & Sour Sauce", small: 0.50, medium: 0.00, large: 1.00),
+            Soup(name: "Hot Chili Oil", small: 0.50, medium: 0.00, large: 1.00),
+            Soup(name: "Peanut Sauce", small: 0.00, medium: 0.00, large: 1.50)
         ]
         
         self.drinks = [
-            MenuItem(name: "Juice(In Can)", price: "$2.50"),
-            MenuItem(name: "Soft Drink(In Can)", price: "$2.50"),
-            MenuItem(name: "2 Litter", price: "$4.00"),
-            MenuItem(name: "Vietnamese Iced Coffee\n(with condensed milk)", price: "$4.00")
+            MenuItem(name: "Juice(In Can)", price: 2.50),
+            MenuItem(name: "Soft Drink(In Can)", price: 2.50),
+            MenuItem(name: "2 Litter", price: 4.00),
+            MenuItem(name: "Vietnamese Iced Coffee\n(with condensed milk)", price: 4.00)
         ]
         
         self.dn1 = [
-            MenuItem(name: "DN1A", price: "$13.95"),
-            MenuItem(name: "DN1B", price: "$13.95"),
-            MenuItem(name: "DN1C", price: "$13.95")
+            MenuItem(name: "DN1A", price: 13.95),
+            MenuItem(name: "DN1B", price: 13.95),
+            MenuItem(name: "DN1C", price: 13.95)
         ]
         self.dn1Images = ["#3", "DN1B"]
         
         self.dn2 = [
-            MenuItem(name: "DN2A", price: "$29.95"),
-            MenuItem(name: "DN2B", price: "$29.95")
+            MenuItem(name: "DN2A", price: 29.95),
+            MenuItem(name: "DN2B", price: 29.95)
         ]
         
         self.dn3 = [
-            MenuItem(name: "DN3A", price: "$43.95"),
-            MenuItem(name: "DN3B", price: "$43.95")
+            MenuItem(name: "DN3A", price: 43.95),
+            MenuItem(name: "DN3B", price: 43.95)
         ]
         
         self.dn4 = [
-            MenuItem(name: "DN4A", price: "$53.95"),
-            MenuItem(name: "DN4B", price: "$55.95")
+            MenuItem(name: "DN4A", price: 53.95),
+            MenuItem(name: "DN4B", price: 55.95)
         ]
         
         self.dn5 = [
-            MenuItem(name: "DN5A", price: "$71.95")
+            MenuItem(name: "DN5A", price: 71.95)
         ]
         
         self.dn6 = [
-            MenuItem(name: "DN6A", price: "$80.95")
+            MenuItem(name: "DN6A", price: 80.95)
         ]
     }
 }
@@ -327,14 +327,14 @@ let menuData = MenuData()
 
 struct MenuItem {
     let name: String
-    let price: String
+    let price: Float
 }
 
 struct Soup {
     let name: String
-    let small: String
-    let medium: String
-    let large: String
+    let small: Float
+    let medium: Float
+    let large: Float
 }
 
 

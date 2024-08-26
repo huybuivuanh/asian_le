@@ -10,9 +10,9 @@ import SwiftUI
 
 struct VermicelliSection: View {
     @Binding var isExpanded: Bool
-    
+    let data: MenuData
+
     var body: some View {
-        let data = MenuData()
 
         // Vermicelli list
         DisclosureGroup(isExpanded: $isExpanded) {
@@ -30,7 +30,7 @@ struct VermicelliSection: View {
                         Text(ver.name)
                             .font(.system(size: 16))
                         Spacer()
-                        Text(ver.price)
+                        Text("$\(ver.price, specifier: "%0.2f")")
                             .foregroundColor(.red)
                             .fontWeight(.bold)
                     }
@@ -40,7 +40,7 @@ struct VermicelliSection: View {
                             Text(ver.name)
                                 .font(.system(size: 15))
                             Spacer()
-                            Text(ver.price)
+                            Text("$\(ver.price, specifier: "%0.2f")")
                                 .foregroundColor(.red)
                                 .fontWeight(.bold)
                         }

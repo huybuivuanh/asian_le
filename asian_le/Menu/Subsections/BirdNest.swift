@@ -10,9 +10,9 @@ import SwiftUI
 
 struct BirdNestSection: View {
     @Binding var isExpanded: Bool
+    let data: MenuData
     
     var body: some View {
-        let data = MenuData()
 
         // Bird Nest
         DisclosureGroup(isExpanded: $isExpanded) {
@@ -22,7 +22,7 @@ struct BirdNestSection: View {
                         HStack {
                             Text(bnest.name)
                             Spacer()
-                            Text(bnest.price)
+                            Text("$\(bnest.price, specifier: "%0.2f")")
                                 .foregroundColor(.red)
                                 .fontWeight(.bold)
                         }
@@ -37,7 +37,7 @@ struct BirdNestSection: View {
                     HStack {
                         Text(bnest.name)
                         Spacer()
-                        Text(bnest.price)
+                        Text("$\(bnest.price, specifier: "%0.2f")")
                             .foregroundColor(.red)
                             .fontWeight(.bold)
                     }

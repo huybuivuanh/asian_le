@@ -10,9 +10,9 @@ import SwiftUI
 
 struct SauceSection: View {
     @Binding var isExpanded: Bool
-    
+    let data: MenuData
+
     var body: some View {
-        let data = MenuData()
 
         // Sauce
         DisclosureGroup(isExpanded: $isExpanded) {
@@ -21,7 +21,7 @@ struct SauceSection: View {
                     HStack {
                         Text(s.name)
                         Spacer()
-                        Text(s.large)
+                        Text("$\(s.large, specifier: "%0.2f")")
                             .font(.system(size: 15))
                             .foregroundColor(.red)
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
@@ -37,7 +37,7 @@ struct SauceSection: View {
                                 Text("Small ")
                                     .font(.system(size: 15))
                                     .foregroundColor(.green)
-                                Text(s.small)
+                                Text("$\(s.small, specifier: "%0.2f")")
                                     .font(.system(size: 15))
                                     .foregroundColor(.red)
                                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
@@ -47,7 +47,7 @@ struct SauceSection: View {
                                 Text("Large ")
                                     .font(.system(size: 15))
                                     .foregroundColor(.green)
-                                Text(s.large)
+                                Text("$\(s.large, specifier: "%0.2f")")
                                     .font(.system(size: 15))
                                     .foregroundColor(.red)
                                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)

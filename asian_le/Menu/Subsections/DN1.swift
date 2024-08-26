@@ -10,9 +10,9 @@ import SwiftUI
 
 struct DN1Section: View {
     @Binding var isExpanded: Bool
-    
+    let data: MenuData
+
     var body: some View {
-        let data = MenuData()
 
         // DN1
         DisclosureGroup(isExpanded: $isExpanded) {
@@ -30,7 +30,7 @@ struct DN1Section: View {
                         HStack {
                             Text(one.name)
                             Spacer()
-                            Text(one.price)
+                            Text("$\(one.price, specifier: "%0.2f")")
                                 .foregroundColor(.red)
                                 .fontWeight(.bold)
                         }
@@ -46,7 +46,7 @@ struct DN1Section: View {
                         HStack {
                             Text(one.name)
                             Spacer()
-                            Text(one.price)
+                            Text("$\(one.price, specifier: "%0.2f")")
                                 .foregroundColor(.red)
                                 .fontWeight(.bold)
                         }
@@ -62,7 +62,7 @@ struct DN1Section: View {
                         HStack {
                             Text(one.name)
                             Spacer()
-                            Text(one.price)
+                            Text("$\(one.price, specifier: "%0.2f")")
                                 .foregroundColor(.red)
                                 .fontWeight(.bold)
                         }

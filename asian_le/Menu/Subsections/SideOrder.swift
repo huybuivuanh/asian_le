@@ -10,9 +10,9 @@ import SwiftUI
 
 struct SideOrderSection: View {
     @Binding var isExpanded: Bool
-    
+    let data: MenuData
+
     var body: some View {
-        let data = MenuData()
 
         // Side Order
         DisclosureGroup(isExpanded: $isExpanded) {
@@ -21,7 +21,7 @@ struct SideOrderSection: View {
                     HStack {
                         Text(side.name)
                         Spacer()
-                        Text(side.large)
+                        Text("$\(side.large, specifier: "%0.2f")")
                             .font(.system(size: 15))
                             .foregroundColor(.red)
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
@@ -37,7 +37,7 @@ struct SideOrderSection: View {
                                 Text("Small ")
                                     .font(.system(size: 15))
                                     .foregroundColor(.green)
-                                Text(side.small)
+                                Text("$\(side.small, specifier: "%0.2f")")
                                     .font(.system(size: 15))
                                     .foregroundColor(.red)
                                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
@@ -47,7 +47,7 @@ struct SideOrderSection: View {
                                 Text("Large ")
                                     .font(.system(size: 15))
                                     .foregroundColor(.green)
-                                Text(side.large)
+                                Text("$\(side.large, specifier: "%0.2f")")
                                     .font(.system(size: 15))
                                     .foregroundColor(.red)
                                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)

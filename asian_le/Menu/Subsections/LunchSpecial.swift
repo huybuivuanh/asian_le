@@ -12,8 +12,10 @@ import SwiftUI
 struct LunchSpecialSection: View {
     @Binding var isExpanded: Bool
     let img = ["#1", "#2", "#3"]
+    let data: MenuData
+    
+    
     var body: some View {
-        let data = MenuData()
 
         // Lunch Specials
         DisclosureGroup(isExpanded: $isExpanded) {
@@ -69,7 +71,7 @@ struct LunchSpecialSection: View {
         } label: {
             VStack(spacing: 3) {
                 if(data.weekdayIndex == 1 || data.weekdayIndex == 7){
-                    Text("Daily Lunch Specials)")
+                    Text("Daily Lunch Specials")
                         .foregroundColor(Color(hex: "AD49E1"))
                         .fontWeight(.bold)
                         .font(.system(size: 19))

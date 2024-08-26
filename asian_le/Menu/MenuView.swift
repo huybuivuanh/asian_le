@@ -66,6 +66,8 @@ struct MenuView: View {
     @State private var dn6Expanded = false
     
 
+    var menuData = MenuData()
+    
     var body: some View {
         ZStack {
             Color(hex: "F9DBBA")
@@ -82,82 +84,82 @@ struct MenuView: View {
                 List {
                     
                     // Lunch Special
-                    LunchSpecialSection(isExpanded: $specialExpanded)
+                    LunchSpecialSection(isExpanded: $specialExpanded, data: menuData)
                     
                     // Appetizer list
-                    AppetizerSection(isExpanded: $appetizersExpanded)
+                    AppetizerSection(isExpanded: $appetizersExpanded, data: menuData)
                     
                     // Salad rolls list
-                    SaladRollSection(isExpanded: $saladRollsExpanded)
+                    SaladRollSection(isExpanded: $saladRollsExpanded, data: menuData)
                     
                     // Soup list
-                    SoupSection(isExpanded: $soupsExpanded)
+                    SoupSection(isExpanded: $soupsExpanded, data: menuData)
                     
                     // Vermicelli list
-                    VermicelliSection(isExpanded: $vermicelliExpanded)
+                    VermicelliSection(isExpanded: $vermicelliExpanded, data: menuData)
                     
                     // Vermicelli Combo list
-                    VermicelliComboSection(isExpanded: $vermicelliComboExpanded)
+                    VermicelliComboSection(isExpanded: $vermicelliComboExpanded, data: menuData)
                     
                     // Noodle Soup
-                    NoodleSoupSection(isExpanded: $noodleSoupExpanded)
+                    NoodleSoupSection(isExpanded: $noodleSoupExpanded, data: menuData)
                     
                     // On Rice
-                    OnRiceSection(isExpanded: $onRiceExpanded)
+                    OnRiceSection(isExpanded: $onRiceExpanded, data: menuData)
                     
                     // Fried Rice
-                    FriedRiceSection(isExpanded: $friedRiceExpanded)
+                    FriedRiceSection(isExpanded: $friedRiceExpanded, data: menuData)
                     
                     // Chow Mein
-                    ChowMeinSection(isExpanded: $chowMeinExpanded)
+                    ChowMeinSection(isExpanded: $chowMeinExpanded, data: menuData)
                     
                     // Chop Suey
-                    ChopSueySection(isExpanded: $chopSueyExpanded)
+                    ChopSueySection(isExpanded: $chopSueyExpanded, data: menuData)
                     
                     // Chicken Dishes
-                    ChickenSection(isExpanded: $chickenDishesExpanded)
+                    ChickenSection(isExpanded: $chickenDishesExpanded, data: menuData)
                     
                     // Beef Dishes
-                    BeefSection(isExpanded: $beefDishesExpanded)
+                    BeefSection(isExpanded: $beefDishesExpanded, data: menuData)
                     
                     // Pork Dishes
-                    PorkSection(isExpanded: $porkDishesExpanded)
+                    PorkSection(isExpanded: $porkDishesExpanded, data: menuData)
                     
                     // Shrimp Dishes
-                    ShrimpSection(isExpanded: $shrimpDishesExpanded)
+                    ShrimpSection(isExpanded: $shrimpDishesExpanded, data: menuData)
                     
                     // Bird Nest
-                    BirdNestSection(isExpanded: $birdNestExpanded)
+                    BirdNestSection(isExpanded: $birdNestExpanded, data: menuData)
                     
                     // Hot Plate
-                    HotPlateSection(isExpanded: $hotPlateExpanded)
+                    HotPlateSection(isExpanded: $hotPlateExpanded, data: menuData)
                     
                     // Side Order
-                    SideOrderSection(isExpanded: $sideOrderExpanded)
+                    SideOrderSection(isExpanded: $sideOrderExpanded, data: menuData)
                     
                     // Sauce
-                    SauceSection(isExpanded: $sauceExpanded)
+                    SauceSection(isExpanded: $sauceExpanded, data: menuData)
                     
                     // Drinks
-                    DrinkSection(isExpanded: $drinksExpanded)
+                    DrinkSection(isExpanded: $drinksExpanded, data: menuData)
                     
                     // DN1
-                    DN1Section(isExpanded: $dn1Expanded)
+                    DN1Section(isExpanded: $dn1Expanded, data: menuData)
                     
                     // DN2
-                    DN2Section(isExpanded: $dn2Expanded)
+                    DN2Section(isExpanded: $dn2Expanded, data: menuData)
                     
                     // DN3
-                    DN3Section(isExpanded: $dn3Expanded)
+                    DN3Section(isExpanded: $dn3Expanded, data: menuData)
                     
                     // DN4
-                    DN4Section(isExpanded: $dn4Expanded)
+                    DN4Section(isExpanded: $dn4Expanded, data: menuData)
                     
                     // DN5
-                    DN5Section(isExpanded: $dn5Expanded)
+                    DN5Section(isExpanded: $dn5Expanded, data: menuData)
                     
                     // DN6
-                    DN6Section(isExpanded: $dn6Expanded)
+                    DN6Section(isExpanded: $dn6Expanded, data: menuData)
                     
                     
                 }
@@ -170,8 +172,3 @@ struct MenuView: View {
         }
     }
 }
-
-#Preview {
-    ContentView()
-}
-

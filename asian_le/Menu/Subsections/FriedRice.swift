@@ -10,9 +10,9 @@ import SwiftUI
 
 struct FriedRiceSection: View {
     @Binding var isExpanded: Bool
-    
+    let data: MenuData
+
     var body: some View {
-        let data = MenuData()
 
         // Fried Rice
         DisclosureGroup(isExpanded: $isExpanded) {
@@ -20,7 +20,7 @@ struct FriedRiceSection: View {
                 HStack {
                     Text(rice.name)
                     Spacer()
-                    Text(rice.price)
+                    Text("$\(rice.price, specifier: "%0.2f")")
                         .foregroundColor(.red)
                         .fontWeight(.bold)
                 }

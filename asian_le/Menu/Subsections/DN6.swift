@@ -10,9 +10,9 @@ import SwiftUI
 
 struct DN6Section: View {
     @Binding var isExpanded: Bool
-    
+    let data: MenuData
+
     var body: some View {
-        let data = MenuData()
 
         // DN6
         DisclosureGroup(isExpanded: $isExpanded) {
@@ -21,7 +21,7 @@ struct DN6Section: View {
                     HStack {
                         Text(six.name)
                         Spacer()
-                        Text(six.price)
+                        Text("$\(six.price, specifier: "%0.2f")")
                             .foregroundColor(.red)
                             .fontWeight(.bold)
                     }

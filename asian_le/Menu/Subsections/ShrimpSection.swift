@@ -10,9 +10,9 @@ import SwiftUI
 
 struct ShrimpSection: View {
     @Binding var isExpanded: Bool
-    
+    let data: MenuData
+
     var body: some View {
-        let data = MenuData()
 
         // Shrimp Dishes
         DisclosureGroup(isExpanded: $isExpanded) {
@@ -20,7 +20,7 @@ struct ShrimpSection: View {
                 HStack {
                     Text(s.name)
                     Spacer()
-                    Text(s.price)
+                    Text("$\(s.price, specifier: "%0.2f")")
                         .foregroundColor(.red)
                         .fontWeight(.bold)
                 }

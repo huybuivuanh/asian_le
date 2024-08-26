@@ -10,9 +10,9 @@ import SwiftUI
 
 struct SaladRollSection: View {
     @Binding var isExpanded: Bool
-    
+    let data: MenuData
+
     var body: some View {
-        let data = MenuData()
         
         // Salad rolls list
         DisclosureGroup(isExpanded: $isExpanded) {
@@ -30,7 +30,7 @@ struct SaladRollSection: View {
                         HStack {
                             Text(roll.name)
                             Spacer()
-                            Text(roll.price)
+                            Text("$\(roll.price, specifier: "%0.2f")")
                                 .foregroundColor(.red)
                                 .fontWeight(.bold)
                         }
@@ -45,7 +45,7 @@ struct SaladRollSection: View {
                     HStack {
                         Text(roll.name)
                         Spacer()
-                        Text(roll.price)
+                        Text("$\(roll.price, specifier: "%0.2f")")
                             .foregroundColor(.red)
                             .fontWeight(.bold)
                     }
